@@ -1,0 +1,13 @@
+{
+  "name": "noification-count",
+  "version": "1.0.0",
+  "description": "",
+  "main": "noification-count.html",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "dependencies": {
+    "polymer": "*"
+  }
+}

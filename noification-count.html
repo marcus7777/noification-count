@@ -1,0 +1,35 @@
+<link rel="import" href="../polymer/polymer.html">
+<!--
+  `<noification-count></noification-count>` Noification Count ^n
+  @demo demo.html
+-->
+<dom-module id="noification-count">
+  <template>
+    <style>
+    :host {
+      display:inline-block;color:#505050; 
+    }
+    .num {
+      display:inline-block;
+      background-color: #cb4437;
+      border-radius:12px;
+      color:#fff;
+      font:bold 8px Arial;
+      height:12px;
+      line-height:12px;
+      position:relative;
+      right:9px;
+      text-align:center;
+      top:-7px;
+      min-width:12px;
+      padding:1px;
+    }
+    </style>
+    <content></content><span class="num">[[count]]</span>
+  </template>
+</dom-module>
+<script>
+  Polymer({
+    is: "noification-count",
+  })
+</script>
