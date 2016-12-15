@@ -11,22 +11,22 @@
           display:inline-block;color:#505050; 
         }
         .num {
+          background-color:#cb4437;
           display:inline-block;
-          background-color: #cb4437;
-          border-radius:12px;
-          color:#fff;
           font:bold 8px Arial;
-          height:12px;
+          border-radius:12px;
           line-height:12px;
-          position:relative;
-          right:9px;
+          position:absolute;
           text-align:center;
-          top:-7px;
           min-width:12px;
           padding:1px;
+          height:12px;
+          color:#fff;
+          right:0;
+          top:0;
         }
       </style>
-      <div><content></content></div><span class="num">[[count]]</span>
+      <div><content></content><span class="num">[[count]]</span></div>
     </template>
     <template is="dom-if" if="{{!count}}">
       <content></content>
