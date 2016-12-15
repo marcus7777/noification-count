@@ -5,23 +5,24 @@
 -->
 <dom-module id="noification-count">
   <template>
+    <style>
+      :host div {
+        background-color: #cb4437;
+        display: inline-block;
+        font: bold 8px Arial;
+        border-radius: 12px;
+        line-height: 12px;
+        text-align: center;
+        min-width: 12px;
+        padding: 1px;
+        height: 12px;
+        color: #fff;
+        margin-left: -8px;
+      }
+    </style>
     <template is="dom-if" if="{{count}}">
-      <style>
-        :host {
-          background-color: #cb4437;
-          display: inline-block;
-          font: bold 8px Arial;
-          border-radius: 12px;
-          line-height: 12px;
-          text-align: center;
-          min-width: 12px;
-          padding: 1px;
-          height: 12px;
-          color: #fff;
-          margin-left: -8px;
-        }
-      </style>
-      [[count]]
+
+      <div>[[count]]</div>
     </template>
   </template>
 </dom-module>
