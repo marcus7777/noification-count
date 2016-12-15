@@ -8,28 +8,20 @@
     <template is="dom-if" if="{{count}}">
       <style>
         :host {
-          display:inline-block;color:#505050; 
-        }
-        .num {
-          background-color:#cb4437;
-          display:inline-block;
-          font:bold 8px Arial;
-          border-radius:12px;
-          line-height:12px;
-          position:absolute;
-          text-align:center;
-          min-width:12px;
-          padding:1px;
-          height:12px;
-          color:#fff;
-          right:0;
-          top:0;
+          background-color: #cb4437;
+          display: inline-block;
+          font: bold 8px Arial;
+          border-radius: 12px;
+          line-height: 12px;
+          text-align: center;
+          min-width: 12px;
+          padding: 1px;
+          height: 12px;
+          color: #fff;
+          margin-left: -8px;
         }
       </style>
-      <div><content></content><span class="num">[[count]]</span></div>
-    </template>
-    <template is="dom-if" if="{{!count}}">
-      <content></content>
+      [[count]]
     </template>
   </template>
 </dom-module>
