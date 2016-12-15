@@ -5,27 +5,32 @@
 -->
 <dom-module id="noification-count">
   <template>
-    <style>
-    :host {
-      display:inline-block;color:#505050; 
-    }
-    .num {
-      display:inline-block;
-      background-color: #cb4437;
-      border-radius:12px;
-      color:#fff;
-      font:bold 8px Arial;
-      height:12px;
-      line-height:12px;
-      position:relative;
-      right:9px;
-      text-align:center;
-      top:-7px;
-      min-width:12px;
-      padding:1px;
-    }
-    </style>
-    <content></content><span class="num">[[count]]</span>
+    <template is="dom-if" if="{{count}}">
+      <style>
+        :host {
+          display:inline-block;color:#505050; 
+        }
+        .num {
+          display:inline-block;
+          background-color: #cb4437;
+          border-radius:12px;
+          color:#fff;
+          font:bold 8px Arial;
+          height:12px;
+          line-height:12px;
+          position:relative;
+          right:9px;
+          text-align:center;
+          top:-7px;
+          min-width:12px;
+          padding:1px;
+        }
+      </style>
+      <content></content><span class="num">[[count]]</span>
+    </template>
+    <template is="dom-if" if="{{!count}}">
+      <content></content>
+    </template>
   </template>
 </dom-module>
 <script>
